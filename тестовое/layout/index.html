@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сitrus</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="item" id="item">
+
+			<div class="item__header">
+				<div class="youtube">
+					<a href="#"></a>
+				</div>
+				<div class="deg360">
+					<a href="#"></a>
+				</div>
+			</div>
+
+			<div class="item__main">
+
+				<div class="item__image">
+					<img src="img/iphonex.png" alt="iPhone X">
+				</div>
+
+				<ul class="navmenu item__color">
+					<li><a href="#" class="active"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+
+				<div class="rating">
+					<div class="stars">
+						<ul>
+							<li class="active" style="width: 60%"><span class="star1"></span></li>
+							<li><span class="star2"></span></li>
+							<li><span class="star3"></span></li>
+							<li><span class="star4"></span></li>
+							<li><span class="star5"></span></li>
+						</ul>
+						<p>5.0</p>
+					</div>
+					<div class="reviews">
+						<a href="#">136 отзывов</a>
+					</div>
+				</div>
+
+				<div class="item__text">
+					<p><span>Код:</span>5G2MY-526123</p>
+					<p>В наличии</p>
+					<h1>Samsung Galaxy Tab E 9.6" 3G 8Gb (SM-T561NZKA) Black</h1>
+				</div>
+
+				<ul class="navmenuGb memory">
+					<li class="gb16">
+						<a href="#" class="active">16GB</a>
+					</li>
+					<li class="gb32">
+						<a href="#">32GB</a>
+					</li>
+				</ul>
+
+				<div class="price">
+					<span class="old">30 580</span>
+					<span class="new">22 599<span>грн</span></span>
+					<p>Экономия: <span>7 981 грн</span></p>
+				</div>
+
+				<ul class="actions">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+
+				<div class="discount">
+					<div class="discount_text">
+						<h3>АКЦИЯ</h3>
+						<p>100 грн на первую покупку!</p>
+					</div>
+				</div>
+
+				<div class="characteristic">
+					<p>Быстрые характеристики</p>
+					<ul>
+						<li>Li-Polymer</li>
+						<li>7500 mAh</li>
+						<li>5 V</li>
+						<li>Время автономной работы
+						в режиме ожидания 12 ч</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="item" id="item2">
+			<div class="item__header">
+				<div class="youtube">
+					<a href="#"></a>
+				</div>
+				<div class="deg360">
+					<a href="#"></a>
+				</div>
+			</div>
+
+			<div class="item__main">
+				<div class="item__image">
+					<img src="img/iphonex.png" alt="iPhone X">
+				</div>
+
+
+
+
+				<ul class="navmenu item__color">
+					<li><a href="#"class="active"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+
+
+
+
+
+				<div class="rating">
+					<div class="stars">
+						<ul>
+							<li class="active" style="width: 60%"><span class="star1"></span></li>
+							<li><span class="star2"></span></li>
+							<li><span class="star3"></span></li>
+							<li><span class="star4"></span></li>
+							<li><span class="star5"></span></li>
+						</ul>
+						<p>5.0</p>
+					</div>
+
+					<div class="reviews">
+						<a href="#">136 отзывов</a>
+					</div>
+				</div>
+
+				<div class="item__text">
+					<p><span>Код:</span>5G2MY-526123</p>
+					<p class="item2">Количество ограничено</p>
+					<h1 class="item2">Samsung Galaxy Tab E 9.6" 3G 8Gb (SM-T561NZKA) Black</h1>
+				</div>
+
+				<div class="price">
+					<p>По программе «Цитрус Обмен»</p>
+					<span class="old">30 580</span>
+					<span class="new">22 599<span>грн</span></span>
+					<p>Экономия: <span>7 981 грн</span></p>
+				</div>
+
+				<ul class="actions">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+
+				<div class="discount">
+					<div class="discount_text">
+						<h3>АКЦИЯ</h3>
+						<p>100 грн на первую покупку!</p>
+					</div>
+				</div>
+
+				<div class="characteristic">
+					<p>Быстрые характеристики</p>
+					<ul>
+						<li>Li-Polymer</li>
+						<li>7500 mAh</li>
+						<li>5 V</li>
+						<li>Время автономной работы в режиме ожидания 12 ч</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+				$(function () {
+		    $(".navmenu a").click(function () {
+		        $(".navmenu a").removeClass("active");
+		        $(this).addClass("active");
+		    });
+		});
+				$(function () {
+		    $(".navmenuGb a").click(function () {
+		        $(".navmenuGb a").removeClass("active");
+		        $(this).addClass("active");
+		    });
+		});
+	</script>
+</body>
+</html>
