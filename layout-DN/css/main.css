@@ -556,16 +556,6 @@
 			#header .header__topnav{
 				position: relative;
 			}
-			.header__topnav::before{
-				content: '';
-				width:600px;
-				height: 5px;
-				color: #000;
-				position: absolute;
-				bottom: 0;
-				left: 170px;
-				z-index: 99;
-			}
 			.header__topnav #myLinks{
 				min-width: 940px;
 				min-height: auto;
@@ -579,6 +569,16 @@
 				position: relative;
 				left: 0;
 				top: 0;
+			}
+			#myLinks::before{
+				content: '';
+				width:600px;
+				height: 1px;
+				background: #000;
+				position: absolute;
+				bottom: 0;
+				left: 170px;
+				animation: lineChange 1s ease forwards;
 			}
 			#header #myLinks .nav__lang{
 				display: flex;
@@ -626,6 +626,9 @@
 			}
 }
 
+
+
+
 @media screen and (min-width: 1366px){
 	
 }
@@ -634,4 +637,13 @@
 }
 @media screen and (min-width: 1520px){
 	
+}
+
+@keyframes lineChange{
+	0%{width: 600px;}
+
+	100%{
+		width: 940px;
+		left: 0;
+	}
 }

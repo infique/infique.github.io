@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DARTC TEST</title>
-	<link rel="stylesheet" href="css/fullpage.css">
+
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,11 +16,11 @@
 			<div class="header__topnav">
 			  <a href="#" id="hamburger"></a>
 			  <ul id="myLinks" class="nav">
-			    <li data-anchor="#home1"><a href="#">Home</a></li>
-			    <li data-anchor="#about2"><a href="#about">About me</a></li>
-			    <li data-anchor="#skills3"><a href="#skills">Skills</a></li>
-			    <li data-anchor="#portfolio4"><a href="#portfolio">Portfolio</a></li>
-			    <li data-anchor="#contacts5"><a href="#contacts">Contacts</a></li>
+			    <li><a href="#home">Home</a></li>
+			    <li><a href="#about">About me</a></li>
+			    <li><a href="#skills">Skills</a></li>
+			    <li><a href="#portfolio">Portfolio</a></li>
+			    <li><a href="#contacts">Contacts</a></li>
 				    <ul class="nav__lang">
 					  	<li><a href="#" class="active">RU</a></li>
 					  	<li><a href="#">ENG</a></li>
@@ -32,7 +32,7 @@
 	</header>
 
 
-	<main id="main" class="section">
+	<main id="main" class="main">
 		<div class="wrapper">
 
 			<div class="main__text">
@@ -54,7 +54,7 @@
 	</main>
 
 
-	<section id="about" class="section">
+	<section id="about" class="about">
 		<div class="wrapper">
 			<h1>About me</h1>
 
@@ -73,7 +73,7 @@
 	</section>
 
 
-	<section id="skills" class="section">
+	<section id="skills" class="skills">
 		<div class="wrapper">
 			<h1>Skills</h1>
 			<p>I work in such program as</p>
@@ -160,19 +160,19 @@
 	</section>
 
 
-	<section id="portfolio" class="section">
+	<section id="portfolio" class="portfolio">
 		<div class="wrapper">
 			<h1>Portfolio</h1>
 
-			<div class="slide" data-anchor="slide0">
+			<div>
 				<img src="img/portfolio_laptop1.png" alt="bg1">
 				<a href="#"><p>Online fashion store - Homepage</p></a>
 			</div>
-			<div class="slide" data-anchor="slide1">
+			<div>
 				<img src="img/portfolio_laptop2.png" alt="bg2">
 				<a href="#"><p>Reebok Store - Concept</p></a>
 			</div>
-			<div class="slide" data-anchor="slide2">
+			<div>
 				<img src="img/portfolio_laptop3.png" alt="bg3">
 				<a href="#"><p>Braun Landing Page - Concept</p></a>
 			</div>
@@ -181,7 +181,7 @@
 	</section>
 
 
-	<section id="contacts" class="section">
+	<section id="contacts" class="contacts">
 		<div class="wrapper">
 			<h1>Contacts</h1>
 			<p>Want to know more or just chat?</p>
@@ -198,7 +198,7 @@
 		</div>
 	</section>
 
-	<footer id="footer" class="section">
+	<footer id="footer" class="footer">
 		<div class="wrapper">
 			<p>Like me on</p>
 			<p>LinkedIn, Instagram, Behance, Dribble</p>
@@ -207,17 +207,13 @@
 
 
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<script src="js/scrolloverflow.js"></script>
-	<script src="js/fullpage.js"></script>
-	
+	<script src="js/script.js"></script>
 
 	<script src="js/wow.min.js"></script>
 	<script>
-    	new WOW().init();
-    </script>
-	<script src="js/script.js"></script>
+		new WOW().init();
+	</script>
 </body>
 </html>
