@@ -3,12 +3,12 @@
 
 // Task 2
 let age = 22
-let petsName = "Sebek"
-console.log(age,petsName)
+let petName = "Sebek"
+console.log(age,petName)
 
 // Task 3
 age = 25
-console.log(age,petsName)
+console.log(age,petName)
 
 // Task 4
 const myPetsName = "Sebek"
@@ -32,7 +32,22 @@ console.log(typeof student.isActive)
 // Task 6
 const numbers = [1, 2, 3, 4, 5]
 const fruits = ['apple', 'mango', 'orange', 'banana', 'avocado']
-const students = ['Dima', 'Sasha', 'Lena', 'Vlad', 'Oleg']
+const students = [{
+        name:"Dima",
+        age:18}, 
+    {   
+        name:"Alex",
+        age:18},
+    {
+        name:"Tanya",
+        age:18},
+    {
+        name:"Kris",
+        age:18},
+    {
+        name:"Olya",
+        age:18}
+]
 
 console.log(typeof numbers[0])
 console.log(typeof fruits[2])
@@ -45,3 +60,4 @@ console.log(lastTask[0], lastTask[9])
 
 // **
 console.log(student.name, student.surname, student.isActive)
+console.log(student)
