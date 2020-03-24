@@ -60,3 +60,9 @@ console.log(lastTask[0], lastTask[9])
 
 // **
 console.log('студент:', student.name, student.surname, ', сейчас активен:', student.isActive)
+
+
+
+const student2 = `студент: ${"Vitalii"} ${"Pysanyi"}, сейчас активен: ${true}`;
+console.log(student2)
+
