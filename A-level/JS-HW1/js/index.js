@@ -59,5 +59,4 @@ const lastTask = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(lastTask[0], lastTask[9])
 
 // **
-console.log(student.name, student.surname, student.isActive)
-console.log(student)
+console.log('студент:', student.name, student.surname, ', сейчас активен:', student.isActive)
