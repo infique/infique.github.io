@@ -55,7 +55,7 @@ console.log(numberX)
 // Task 5
 let numberY = "100"
 
-console.log(+numberY)
+console.log(typeof +numberY)
 console.log(typeof Number(numberY))
 console.log(typeof parseInt("100"))
 
