@@ -29,7 +29,7 @@ console.log({} === {})
 
 // // Task 2
 let evenNumbers = prompt('Это четное число?', 20)
-if(evenNumbers % 2 == 0){
+if(evenNumbers % 2 === 0){
     console.log(true)
 }
 else{
@@ -38,7 +38,7 @@ else{
 
 // //  Task 3
 let oddNumbers = prompt('Это нечетное число?', 21)
-if(oddNumbers % 2 != 0){
+if(oddNumbers % 2 !== 0){
     console.log(true)
 }
 else{
