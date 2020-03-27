@@ -63,8 +63,8 @@ console.log(typeof parseInt("100"))
 const a = 10
 const b = 5
 
-console.log( (a + b) * (a - b) == (a ** 2) - (b ** 2) )
-console.log( (2 + 3) * (2 - 3) == (2 ** 2) - (3 ** 2) )
+console.log( (a + b) * (a - b) === (a ** 2) - (b ** 2) )
+console.log( (2 + 3) * (2 - 3) === (2 ** 2) - (3 ** 2) )
 
 
 // Task with ******
@@ -94,5 +94,5 @@ else{
 let a1 = 2
 let b1 = 3
 
-console.log((a1 + b1) ** 3 == a1 ** 3 + 3 * a1 ** 2 * b1 + 3 * a1 * b1 ** 2 + b1 ** 3)
-console.log((5 + 10) ** 3 == 5 ** 3 + 3 * 5 ** 2 * 10 + 3 * 5 * 10 ** 2 + 10 ** 3)
+console.log((a1 + b1) ** 3 === a1 ** 3 + 3 * a1 ** 2 * b1 + 3 * a1 * b1 ** 2 + b1 ** 3)
+console.log((5 + 10) ** 3 === 5 ** 3 + 3 * 5 ** 2 * 10 + 3 * 5 * 10 ** 2 + 10 ** 3)
