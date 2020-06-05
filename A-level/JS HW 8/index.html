@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HW 8</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js'></script>
+    <script>
+        const socket = io('http://socketchat.fs.a-level.com.ua')
+    </script>
+</head>
+<body>
+
+
+    <!-- ====================== Calculator ===================== -->
+
+    <h2 style="text-align: center;font-size: 30px;">calculator</h2>
+    <div id="calculator" style="border: 1px solid blue; display: flex; width:50%; margin: 30px auto 100px; padding: 40px;">
+        <input type='number' id='a'/>
+        <span>+</span>
+        <input type='number' id='b'/> 
+        <button id='calc' style="padding: 0 40px;">=</button>
+        <div id='result'></div>
+    </div>
+
+    <!-- ====================== Calculator LIVE ===================== -->
+
+    <h2 style="text-align: center;font-size: 30px;">calculator LIVE</h2>
+    <div id="calculatorLIVE" style="border: 1px solid blue; display: flex; width:50%; margin: 30px auto 100px; padding: 40px;">
+        <input type='number1' id='a1'/>
+        <span>+</span>
+        <input type='number1' id='b1'/> 
+        <button id='calc1' style="padding: 0 40px;">=</button>
+        <div id='result1'></div>
+    </div>
+
+        <script>
+    //====================== Подсветить ячейку ====================
+
+            // const bgStyle = (x, y, mX, mY) => {
+            //     if (x === mX && y === mY)
+            //         return {
+            //             backgroundColor: 'red'
+            //         }
+            //         return {
+            //             backgroundColor: ''
+            //         }
+            // }
+    //================= Подсветить строку и столбец ===============
+
+            // const bgStyle2 = (x, y, mX, mY) => {
+            //     if (x === mX || y === mY)
+            //         return {
+            //             backgroundColor: 'purple'
+            //         }
+            //         return {
+            //             backgroundColor: ''
+            //         }
+            // }
+    //======================== Таблица ===========================
+
+            // for (let i = 1; i < 10; i++) {
+            //     let tr = document.createElement('tr')
+            //     for (let j = 1; j < 10; j++){
+            //         let td = document.createElement('td')
+            //         td.innerText = i * j
+            //         tr.appendChild(td)
+
+            //         td.onmouseover = () => {
+            //             for (let y = 1; y < 10; y++) {
+            //                 for (let x = 1; x < 10; x++) {
+            //                     const otherTd = tbl.children[y].children[x]
+            //                     let style = bgStyle(x,y)
+            //                     for (const [styleKey, styleValue] of Object.entries(style)){
+            //                         otherTd.style[styleKey] = styleValue
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //         td.onmouseout = () => {
+            //             td.style.cssText = ""
+            //         }
+            //     }
+            //     tbl.appendChild(tr)
+            // }
+            const table = document.createElement('table');
+
+            for (let i = 1; i < 10; i++) {
+            const row = document.createElement('tr');
+            for (let j = 1; j < 10; j++) {
+                const col = document.createElement('td');
+                let val = i * j;
+                if (val === 0) {
+                val = i || j;
+                }
+                col.innerHTML = val;
+                row.appendChild(col);
+            }
+            table.appendChild(row);
+            }
+            document.body.appendChild(table);
+
+            table.onmouseover = function(event) {
+                let target = event.target;
+                target.style.background = 'blue';
+                };
+    
+            table.onmouseout = function(event) {
+                let target = event.target;
+                target.style.background = '';
+            };
+
+
+        // ==================== Calculator ======================
+
+            calc.onclick = () => result.innerHTML = +(+a.value + +b.value);
+
+        // ================== Calculator LIVE ===================
+
+             a1.oninput = b1.oninput = () => result1.innerHTML = +(+a1.value + +b1.value);
+           
+        </script>
+        
+        <script src="index.js"></script>
+
+</body>
+</html>

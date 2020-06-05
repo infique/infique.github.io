@@ -1,0 +1,40 @@
+input{
+    border: 1px solid red;
+    margin: 10px auto;
+    font-size: 18px;
+    outline: none;
+}
+#result, #result1{
+    margin: 10px auto;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 5px;
+}
+button{
+    border: 1px solid green;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+}
+body{
+    font-size: 32px;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid green;
+    background-color: khaki;
+}
+td{
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 5px;
+    background-color: yellow;
+    width: 25px; 
+    height: 25px;
+    text-align: center;
+}
+.highlight {
+  background:purple;
+}
