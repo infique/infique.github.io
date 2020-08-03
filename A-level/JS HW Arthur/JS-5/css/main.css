@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: linear-gradient(90deg,#8382a2 10%, #ce6634 90%);
+}
+.wrapper{
+  width: 100%;
+  padding: 100px 0;
+}
+#file {
+  visibility: hidden;
+}
+#container{
+  text-align: center;
+}
+.download {
+    background: pink;
+    width: 200px;
+    height: 50px;
+    border: 5px solid #989898;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    outline: none;
+    color: #989898;
+    font-family: Arial;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 auto 50px;
+  }
+  .download:hover{
+    color: pink;
+    border: 5px solid pink;
+    background: #989898;
+  }
+  
+  .download > input {
+    position: absolute;
+    z-index: 1;
+    outline: none;
+    visibility: hidden;
+  }
+  .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  button {
+    background: coral;
+    width: 200px;
+    height: 50px;
+    border: 5px solid #e4e4e4;
+    border-radius: 20px;
+    outline: none;
+    color: #e4e4e4;
+    font-family: Arial;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  button:hover{
+    color: coral;
+    border: 5px solid coral;
+    background: #e4e4e4;
+  }
+  
+  .cont {
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    text-align: center;
+  }
+
+
