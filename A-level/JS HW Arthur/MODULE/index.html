@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODULE JS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form id="form">
+            <div class="form_col1">
+                <span class="nameFilter">Limits:</span>
+                <select id="limit" class="select">
+                    <option selected value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <div class="form_col2">
+                <span class="nameFilter">Category:</span>
+                <select id="category" class="select">
+                    <option selected value="angular">Angular.js</option>
+                    <option value="react">React.js</option>
+                    <option value="vuejs">Vue.js</option>
+                </select>
+            </div>
+        </form>
+
+        <p id="loader"><img  src="img/img.png" alt="loading"></p>
+        <ul id="result"></ul>
+
+        <div id="pagin">
+            <button id="prev" class="btn" type="button">PREV</button>
+            <button id="next" class="btn" type="button">NEXT</button>
+        </div>
+    
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
